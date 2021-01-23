@@ -1,0 +1,29 @@
+{
+  "name": "Tests-JS",
+  "version": "1.0.0",
+  "description": "TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --parallel --exit tests/",
+    "test:dev": "npx mocha  tests/ -w",
+    "test:cov": "npx nyc --reporters=text,html  npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaTux/Tests-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaphaTux/Tests-JS/issues"
+  },
+  "homepage": "https://github.com/RaphaTux/Tests-JS#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "lokijs": "1.5",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  }
+}
